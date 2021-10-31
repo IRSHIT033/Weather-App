@@ -1,0 +1,36 @@
+ {{>head}}
+ {{>navbar}}
+   <div class="conatainer-fluid main_header new_content">
+      <div class="row">
+         <div class=" col-12 mx-auto">
+
+          <div class="temp_form">
+                <form>
+                <input type="text" id="city_in" placeholder="City name...."/>
+                <button class="search_btn" id="submit"><i class="fa fa-3x fa-search" aria-hidden="true"></i></button>
+                </form>
+           </div>
+             <div class="alert alert-danger d-none" id="alert" role="alert">
+             </div> 
+          <div class="card" >
+               <div class="card-body ">
+                    <h3 id="Date" class="px-3 pt-3"></h3>
+                       <h2 class="City px-3" id="city_o">GET YOUR OUTPUTS HERE</h2>
+                    <h1 class="temp px-3" id="temp"></h1>
+                    <h1 class="temp px-3 " id="temp_min_max"></h1>
+                    <h1 class="temp_status px-3" id="status"></h1>
+                    <h1 class="temp_status px-3" id="humidity"></h1>
+                    <h1 class="temp_status px-3" id="pressure"></h1>
+                    
+
+                    
+                      
+                    <img src="" id="temp_img" class="d-none img-fluid d-flex justify-content-center mx-auto my-4" alt="">
+                </div>
+          </div>
+     
+        
+          </div>
+       </div>
+   </div>
+{{>footer}}
