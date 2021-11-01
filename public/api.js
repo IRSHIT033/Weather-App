@@ -41,7 +41,7 @@ const call_API=async(e)=>{
              if(arr_data[0].weather[0].icon.includes('d')){
               temp_img.src=`./images/haze.png`
              }
-           else{
+             if(arr_data[0].weather[0].icon.includes('n')){
                 temp_img.src=`./images/haze-night.png`
                }
          }
@@ -71,7 +71,7 @@ const call_API=async(e)=>{
              if(arr_data[0].weather[0].icon.includes('d')){
               temp_img.src=`./images/sunny.png`
              }
-           else{
+             if(arr_data[0].weather[0].icon.includes('n')){
                 temp_img.src=`./images/night.png`
                }
             }
