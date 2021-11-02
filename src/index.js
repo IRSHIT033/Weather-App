@@ -1,7 +1,10 @@
 const express=require("express")
 const path=require("path")
+const http=require('http')
 const port=process.env.PORT||5000;
+
 const app=express();
+var httpServer = http.createServer(app);
 const hbs=require("hbs")
 //public static path
 const Static_Path=path.join(__dirname,"../public")
@@ -20,11 +23,10 @@ app.get("/weather",(req,res)=>{
     res.render("weather")
 })
 
-
 app.get("*",(req,res)=>{
     res.render("error")
 })
 
-app.listen(port,()=>{
-    console.log("listenig to the port "+ port);
+httpServer.listen(port,()=>{
+    console.log("listenig to the port"+ port);
 })
